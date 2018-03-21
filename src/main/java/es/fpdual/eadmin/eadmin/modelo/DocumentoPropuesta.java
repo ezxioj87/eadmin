@@ -11,7 +11,6 @@ public class DocumentoPropuesta extends Documento{
 	public DocumentoPropuesta(Integer codigo, String nombre, Date fechaCreacion, Boolean publico,
 			EstadoDocumento estado,Integer codigoPropuesta, Integer ejercicio, String grupoPolitico) {
 		super(codigo, nombre, fechaCreacion, publico, estado);
-		// TODO Auto-generated constructor stub
 		this.codigoPropuesta = codigoPropuesta;
 		this.ejercicio = ejercicio;
 		this.grupoPolitico = grupoPolitico;

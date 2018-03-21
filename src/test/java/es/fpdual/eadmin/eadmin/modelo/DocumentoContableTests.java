@@ -9,12 +9,12 @@ import org.junit.Test;
 public class DocumentoContableTests {
 	
 	private static final Integer codigo_Contable = 1;
-	private static final Date fecha_Creacion= new Date();
+	private static final Date fechaCreacion= new Date();
 	private static final String nombre_String = "nombre";
 	private static final Boolean documento_Publico = true;
 	private static BigDecimal importe = new BigDecimal(0.0);
 	private static String nifInteresado = "12345678A";
-	DocumentoContable documentoContable1 = new DocumentoContable(codigo_Contable,nombre_String,fecha_Creacion,
+	DocumentoContable documentoContable1 = new DocumentoContable(codigo_Contable,nombre_String,fechaCreacion,
 			documento_Publico, EstadoDocumento.ACTIVO,importe,nifInteresado);
 	
 	@Before
