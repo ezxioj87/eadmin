@@ -1,7 +1,5 @@
 package es.fpdual.eadmin.eadmin.modelo;
 
-import static org.junit.Assert.assertEquals;
-
 import java.util.Date;
 
 import org.junit.Before;
