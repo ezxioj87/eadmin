@@ -8,8 +8,8 @@ public class DocumentoRegistro extends Documento{
 	private String codigoRegistro;
 	
 	public DocumentoRegistro(Integer codigo, String nombre, Date fechaCreacion, Boolean publico,
-			EstadoDocumento estado,String nifInteresado,String codigoRegistro) {
-		super(codigo, nombre, fechaCreacion, publico, estado);
+			EstadoDocumento estado,String nifInteresado,String codigoRegistro,Date fechaUltimaModificacion) {
+		super(codigo, nombre, fechaCreacion, publico, estado,fechaUltimaModificacion);
 		// TODO Auto-generated constructor stub
 		this.nifInteresado = nifInteresado;
 		this.codigoRegistro = codigoRegistro;

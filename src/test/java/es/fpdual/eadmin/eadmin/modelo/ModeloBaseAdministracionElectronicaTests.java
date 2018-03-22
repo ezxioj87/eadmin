@@ -12,8 +12,8 @@ public class ModeloBaseAdministracionElectronicaTests {
 	class ModeloBaseAdministracionElectronicaFake extends ModeloBaseAdministracionElectronica{
 
 		public ModeloBaseAdministracionElectronicaFake(Integer codigo, String nombre, Date fechaCreacion,
-				Boolean publico) {
-			super(codigo, nombre, fechaCreacion, publico);
+				Boolean publico,Date fechaUltimaModificacion) {
+			super(codigo, nombre, fechaCreacion, publico,fechaUltimaModificacion);
 			// TODO Auto-generated constructor stub
 		}
 		
@@ -23,9 +23,10 @@ public class ModeloBaseAdministracionElectronicaTests {
 	private static final Date fechaCreacion= new Date();
 	private static final String nombreString = "nombre";
 	private static final Boolean documentoPublico = true;
+	private static final Date fechaUltimaModificacion = new Date();
 	
 	ModeloBaseAdministracionElectronicaFake modeloBase = new ModeloBaseAdministracionElectronicaFake(codigoDocumento, 
-			nombreString,fechaCreacion,documentoPublico);
+			nombreString,fechaCreacion,documentoPublico,fechaUltimaModificacion);
 	
 	@Before
 	@Test
@@ -35,20 +36,21 @@ public class ModeloBaseAdministracionElectronicaTests {
 		assertEquals(nombreString, modeloBase.getNombre());
 		assertEquals(fechaCreacion, modeloBase.getFechaCreacion());
 		assertEquals(documentoPublico, modeloBase.getPublico());
+		assertEquals(fechaUltimaModificacion,modeloBase.getFechaUltimaModificacion());
 		
 	}
 	@Before
 	@Test
 	public void deberiaDevolverTrueSiTienenIgualCodigo() {	
 		ModeloBaseAdministracionElectronicaFake modeloBase2 = new ModeloBaseAdministracionElectronicaFake(codigoDocumento, 
-				null,null,null);
+				null,null,null,null);
 		assertEquals(true,modeloBase.equals(modeloBase2));
 	}
 	@Before
 	@Test
 	public void deberiaDevolverFalseSiNoTienenIgualCodigo() {	
 		ModeloBaseAdministracionElectronicaFake modeloBase2 = new ModeloBaseAdministracionElectronicaFake(2, 
-				null,null,null);
+				null,null,null,null);
 		assertEquals(false,modeloBase.equals(modeloBase2));
 
 	}

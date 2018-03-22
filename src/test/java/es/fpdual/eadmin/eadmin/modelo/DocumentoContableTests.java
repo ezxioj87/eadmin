@@ -14,8 +14,9 @@ public class DocumentoContableTests {
 	private static final Boolean documento_Publico = true;
 	private static BigDecimal importe = new BigDecimal(0.0);
 	private static String nifInteresado = "12345678A";
+	private static final Date fechaUltimaModificacion = new Date();
 	DocumentoContable documentoContable1 = new DocumentoContable(codigo_Contable,nombre_String,fechaCreacion,
-			documento_Publico, EstadoDocumento.ACTIVO,importe,nifInteresado);
+			documento_Publico, EstadoDocumento.ACTIVO,importe,nifInteresado,fechaUltimaModificacion);
 	
 	@Before
 	@Test

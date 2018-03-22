@@ -10,7 +10,8 @@ public class DocumentoTests {
 	private static final Date fecha_Creacion= new Date();
 	private static final String nombre_String = "nombre";
 	private static final Boolean documento_Publico = true;
-	Documento documento1 = new Documento(codigo_Documento,nombre_String,fecha_Creacion,documento_Publico, EstadoDocumento.ACTIVO);
+	private static final Date fechaUltimaModificacion = new Date();
+	Documento documento1 = new Documento(codigo_Documento,nombre_String,fecha_Creacion,documento_Publico, EstadoDocumento.ACTIVO,fechaUltimaModificacion);
 	
 	@Before
 	@Test

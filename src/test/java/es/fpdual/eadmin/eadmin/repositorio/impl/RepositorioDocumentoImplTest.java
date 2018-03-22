@@ -13,7 +13,8 @@ public class RepositorioDocumentoImplTest {
 	private Date fechaCreacion =new Date();
 	private Boolean publico = true;
 	private RepositorioDocumentoImpl repositorioDocumento;
-	Documento documento1 = new Documento(1,"nombre",fechaCreacion,publico, EstadoDocumento.ACTIVO);
+	private static final Date fechaUltimaModificacion = new Date();
+	Documento documento1 = new Documento(1,"nombre",fechaCreacion,publico, EstadoDocumento.ACTIVO,fechaUltimaModificacion);
 	
 	@Before
 	public void inicializarEnCadaTest() {
@@ -47,10 +48,10 @@ public class RepositorioDocumentoImplTest {
 		assertTrue(this.repositorioDocumento.getDocumentos().isEmpty());
 	}
 	
-	@Test
+	/*	@Test
 	public void debeModificarUnArchivo() {
 		this.repositorioDocumento.modificarDocumento(documento1);
 		
 	}
-	
+	*/	
 }

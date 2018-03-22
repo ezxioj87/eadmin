@@ -10,7 +10,7 @@ public class DocumentoRegistroTests {
 	private static final Boolean documento_Publico = true;
 	private static String nifInteresado = "12345678A";
 	private static String codigoRegistro;
-	
+	private static final Date fechaUltimaModificacion = new Date();
 	DocumentoRegistro documentoRegistro1 = new DocumentoRegistro(codigo_Registro,nombre_String,fecha_Creacion1,
-			documento_Publico, EstadoDocumento.ACTIVO,nifInteresado,codigoRegistro);
+			documento_Publico, EstadoDocumento.ACTIVO,nifInteresado,codigoRegistro,fechaUltimaModificacion);
 }

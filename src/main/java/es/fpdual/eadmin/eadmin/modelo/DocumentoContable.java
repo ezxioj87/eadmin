@@ -9,8 +9,8 @@ public class DocumentoContable extends Documento{
 	private String nifInteresado;
 	
 	public DocumentoContable(Integer codigo, String nombre, Date fechaCreacion, Boolean publico,
-			EstadoDocumento estado, BigDecimal importe,String nifInteresado) {
-		super(codigo, nombre, fechaCreacion, publico, estado);
+			EstadoDocumento estado, BigDecimal importe,String nifInteresado,Date fechaUltimaModificacion) {
+		super(codigo, nombre, fechaCreacion, publico, estado,fechaUltimaModificacion);
 		this.importe = importe;
 		this.nifInteresado = nifInteresado;
 	}

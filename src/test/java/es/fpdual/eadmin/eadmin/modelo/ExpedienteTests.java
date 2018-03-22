@@ -12,8 +12,9 @@ import org.junit.Test;
 		private static final String nombre_String = "nombre";
 		private static final Boolean documento_Publico = true;
 		private static List<Documento> documentos;
+		private static final Date fechaUltimaModificacion = new Date();
 		Expediente expediente1 = new Expediente (codigo_Expediente,nombre_String,fecha_Creacion,fecha_Archivacion,
-				documento_Publico, EstadoExpediente.ENTRAMITE,documentos);
+				documento_Publico, EstadoExpediente.ENTRAMITE,documentos,fechaUltimaModificacion);
 /*		
 		@Before
 		@Test
@@ -37,16 +38,16 @@ import org.junit.Test;
 		@Test
 		public void deberiaDevolverTrueSiTienenTodosLosElementosIgualesExecptoLaLista() {	
 			Expediente expediente2 = new Expediente (codigo_Expediente,nombre_String,fecha_Creacion,fecha_Archivacion,
-					documento_Publico, EstadoExpediente.ENTRAMITE,documentos);
+					documento_Publico, EstadoExpediente.ENTRAMITE,documentos,fechaUltimaModificacion);
 			assertEquals(true,expediente1.equals(expediente2));
 		}
 		@Before
 		@Test
 		public void deberiaDevolverFalseSiNoTienenIgualTodosLosDatosExceptoLaLista() {	
 			Expediente expediente2 = new Expediente (1,nombre_String,fecha_Creacion,fecha_Archivacion,
-					false, EstadoExpediente.ARCHIVADO,null);
+					false, EstadoExpediente.ARCHIVADO,null,null);
 			Expediente expediente3 = new Expediente (1,nombre_String,fecha_Creacion,fecha_Archivacion,
-					false, EstadoExpediente.INICIADO,null);
+					false, EstadoExpediente.INICIADO,null,null);
 			assertEquals(false,expediente1.equals(expediente2));
 			assertEquals(false,expediente1.equals(expediente3));
 		}
