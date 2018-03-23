@@ -31,7 +31,7 @@ public class RepositorioDocumentoImplTest {
 	public void deberiaSaltarExcepcionAlDarDeAltaUnDocumento() {
 		this.repositorioDocumento.altaDocumento(documento1);
 		this.repositorioDocumento.altaDocumento(documento1);
-		assertFalse(this.repositorioDocumento.getDocumentos().isEmpty());adadadf
+		assertFalse(this.repositorioDocumento.getDocumentos().isEmpty());
 	}
 */	
 	@Test
