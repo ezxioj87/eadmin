@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.List;
 
 import es.fpdual.eadmin.eadmin.modelo.Documento;
-import es.fpdual.eadmin.eadmin.modelo.EstadoDocumento;
 import es.fpdual.eadmin.eadmin.modelo.EstadoExpediente;
 import es.fpdual.eadmin.eadmin.modelo.Expediente;
 

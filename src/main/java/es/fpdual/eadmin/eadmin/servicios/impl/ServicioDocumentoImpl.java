@@ -1,6 +1,7 @@
 package es.fpdual.eadmin.eadmin.servicios.impl;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +26,7 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 	@Override
 	public Documento altaDocumento(Documento documento) {
 		
-		final Documento documentoModificado = obtenerDocumentoConFechaCorrecta(documento);
+		final Documento documentoModificado = obtenerDocumentoConFechaCreacionCorrecta(documento);
 		
 		repositorioDocumento.altaDocumento(documentoModificado);
 		
@@ -34,9 +35,11 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 	}
 
 	@Override
-	public void modificarDocumento(Documento documento) {
+	public Documento modificarDocumento(Documento documento) {
 		
 		repositorioDocumento.modificarDocumento(documento);
+		
+		return documento;
 		
 	}
 
@@ -47,12 +50,36 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 		
 	}
 	
-	protected Documento obtenerDocumentoConFechaCorrecta(Documento documento1) {
-		
-		return new DocumentoBuilder().clonar(documento1).conFechaCreacion(dameFechaActual()).construir();
-	}
+
 
 	protected static Date dameFechaActual() {
 		return new Date();
+	}
+
+	@Override
+	public Documento obtenerDocumentoPorCodigo(Integer codigo) {
+		// TODO Auto-generated method stub
+		return this.repositorioDocumento.obtenerDocumentoPorCodigo(codigo);
+	}
+
+	@Override
+	public List<Documento> obtenerTodosLosDocumentos() {
+		// TODO Auto-generated method stub
+		return repositorioDocumento.obtenerTodosLosDocumentos();
+	}
+	
+	@Override
+	public Documento obtenerDocumentoConFechaCreacionCorrecta(Documento documento) {
+		return new DocumentoBuilder().clonar(documento).conFechaCreacion(dameFechaActual()).construir();
+		
+	}
+	
+	@Override
+	public Documento modificarDocumentoConFechaCreacionCorrecta(Documento documento) {
+		final Documento documentoModificado = obtenerDocumentoConFechaCreacionCorrecta(documento);
+		repositorioDocumento.modificarDocumento(documentoModificado);
+		return documentoModificado;
+		
+		
 	}
 }

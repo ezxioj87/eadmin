@@ -13,7 +13,9 @@ public class DocumentoBuilderTest {
 	
 	@Before
 	public void deberiaCrearUnDocumento() {
-		documento1 =new DocumentoBuilder().conCodigo(1).conNombre("nombre").conFechaCreacion(null).conPublico(null).conEstado(null).conFechaUltimaModificacion(null).construir();
+		documento1 =new DocumentoBuilder().conCodigo(1).conNombre("nombre")
+				.conFechaCreacion(null).conPublico(null).conEstado(null)
+				.conFechaUltimaModificacion(null).construir();
 	}
 	
 	@Test
@@ -24,7 +26,8 @@ public class DocumentoBuilderTest {
 		assertEquals(documento1.getFechaCreacion(),documento2.getFechaCreacion());
 		assertEquals(documento1.getPublico(),documento2.getPublico());
 		assertEquals(documento1.getEstado(),documento2.getEstado());
-		assertEquals(documento1.getFechaUltimaModificacion(),documento2.getFechaUltimaModificacion());
+		assertEquals(documento1.getFechaUltimaModificacion(),documento2.
+				getFechaUltimaModificacion());
 		
 	}
 	

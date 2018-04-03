@@ -2,26 +2,29 @@ package es.fpdual.eadmin.eadmin.servicios.impl;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertSame;
 import static org.mockito.Mockito.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 import es.fpdual.eadmin.eadmin.modelo.Documento;
 import es.fpdual.eadmin.eadmin.repositorio.RepositorioDocumento;
-import es.fpdual.eadmin.eadmin.servicios.ServicioDocumento;
+
 
 public class ServicioDocumenoImplTest {
 	
 	Documento documento1 = mock(Documento.class);
-	private ServicioDocumento servicioDocumento ;
+	private ServicioDocumentoImpl servicioDocumento ;
 	private RepositorioDocumento repositorioDocumento = mock(RepositorioDocumento.class);
 	private static final Integer codigoDoc = 1;
 	
 	@Before
 	public void inicializarEnCadaTest() {
-		this.servicioDocumento = new ServicioDocumentoImpl(repositorioDocumento);
+		this.servicioDocumento = spy(new ServicioDocumentoImpl(repositorioDocumento));
 		
 	}
 	
@@ -51,5 +54,38 @@ public class ServicioDocumenoImplTest {
 		verify(this.repositorioDocumento).eliminarDocumento(codigoDoc);
 	}
 	
+	@Test
+	public void deberiaObtenerDocumentoPorCodigo() {
+		when(repositorioDocumento.obtenerDocumentoPorCodigo(1)).thenReturn(documento1);
+		final Documento resultado = this.servicioDocumento.obtenerDocumentoPorCodigo(1);
+		assertSame(resultado,documento1);
+	}
+	
+	@Test
+	public void deberiaObtenerTodosLosDocumentos() {
+		List<Documento> listaDocumento = new ArrayList<>();
+		when(repositorioDocumento.obtenerTodosLosDocumentos()).thenReturn(listaDocumento);
+		final List<Documento> resultado = this.servicioDocumento.obtenerTodosLosDocumentos();
+		assertSame(listaDocumento,resultado);
+	}
+	
+	@Test
+	public void TestAltaDocumentoFechaCorrecta() {
+		final Documento documentoModificado = mock(Documento.class);
+		doReturn(documentoModificado).when(this.servicioDocumento).obtenerDocumentoConFechaCreacionCorrecta(documento1);
+		final Documento resultado = this.servicioDocumento.altaDocumento(documento1);
+		verify(repositorioDocumento).altaDocumento(documentoModificado);
+		assertSame(resultado,documentoModificado);
+	}
+	
+	@Test
+	public void TestModificarDocumentoFechaCorrecta() {
+		final Documento documentoModificado = mock(Documento.class);
+		doReturn(documentoModificado).when(this.servicioDocumento).obtenerDocumentoConFechaCreacionCorrecta(documento1);
+		final Documento resultado = this.servicioDocumento.modificarDocumentoConFechaCreacionCorrecta(documento1);
+		verify(repositorioDocumento).modificarDocumento(documentoModificado);
+		assertSame(resultado,documentoModificado);
+		
+	}
 	
 }
