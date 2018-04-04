@@ -1,0 +1,305 @@
+2018-04-04 13:32:22.044  INFO 2344 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 2344 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 13:32:22.054  INFO 2344 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 13:32:22.172  INFO 2344 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7920ba90: startup date [Wed Apr 04 13:32:22 CEST 2018]; root of context hierarchy
+2018-04-04 13:32:23.658  INFO 2344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 13:32:23.687  INFO 2344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 13:32:23.687  INFO 2344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 13:32:23.702  INFO 2344 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 13:32:23.881  INFO 2344 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 13:32:23.883  INFO 2344 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1710 ms
+2018-04-04 13:32:24.099  INFO 2344 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 13:32:24.102  INFO 2344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 13:32:24.103  INFO 2344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 13:32:24.104  INFO 2344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 13:32:24.104  INFO 2344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 13:32:24.530  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7920ba90: startup date [Wed Apr 04 13:32:22 CEST 2018]; root of context hierarchy
+2018-04-04 13:32:24.626  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 13:32:24.628  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 13:32:24.628  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 13:32:24.635  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 13:32:24.636  INFO 2344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 13:32:24.711  INFO 2344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:32:24.711  INFO 2344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:32:24.771  INFO 2344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:32:24.979  INFO 2344 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 13:32:25.023  INFO 2344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 13:32:25.028  INFO 2344 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 3.534 seconds (JVM running for 3.99)
+2018-04-04 13:32:25.031  INFO 2344 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 13:32:25.032  INFO 2344 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 13:32:25.032  INFO 2344 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 13:32:25.033  INFO 2344 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 13:36:15.472  INFO 1028 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 1028 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 13:36:15.475  INFO 1028 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 13:36:15.523  INFO 1028 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c1a8622: startup date [Wed Apr 04 13:36:15 CEST 2018]; root of context hierarchy
+2018-04-04 13:36:16.741  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 13:36:16.768  INFO 1028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 13:36:16.769  INFO 1028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 13:36:16.778  INFO 1028 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 13:36:16.882  INFO 1028 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 13:36:16.882  INFO 1028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1359 ms
+2018-04-04 13:36:17.030  INFO 1028 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 13:36:17.046  INFO 1028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 13:36:17.046  INFO 1028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 13:36:17.046  INFO 1028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 13:36:17.046  INFO 1028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 13:36:17.346  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c1a8622: startup date [Wed Apr 04 13:36:15 CEST 2018]; root of context hierarchy
+2018-04-04 13:36:17.431  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 13:36:17.431  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 13:36:17.431  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 13:36:17.431  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 13:36:17.431  INFO 1028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 13:36:17.462  INFO 1028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:36:17.462  INFO 1028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:36:17.516  INFO 1028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:36:17.683  INFO 1028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 13:36:17.716  INFO 1028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 13:36:17.716  INFO 1028 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.593 seconds (JVM running for 3.037)
+2018-04-04 13:36:17.716  INFO 1028 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 13:36:17.716  INFO 1028 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 13:36:17.716  INFO 1028 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 13:36:17.731  INFO 1028 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 13:54:03.212  INFO 8084 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 8084 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 13:54:03.212  INFO 8084 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 13:54:03.282  INFO 8084 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13acb0d1: startup date [Wed Apr 04 13:54:03 CEST 2018]; root of context hierarchy
+2018-04-04 13:54:04.474  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 13:54:04.503  INFO 8084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 13:54:04.505  INFO 8084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 13:54:04.515  INFO 8084 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 13:54:04.675  INFO 8084 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 13:54:04.676  INFO 8084 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1394 ms
+2018-04-04 13:54:04.794  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 13:54:04.794  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 13:54:04.794  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 13:54:04.794  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 13:54:04.794  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 13:54:05.110  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13acb0d1: startup date [Wed Apr 04 13:54:03 CEST 2018]; root of context hierarchy
+2018-04-04 13:54:05.194  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 13:54:05.194  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 13:54:05.194  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 13:54:05.194  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 13:54:05.194  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 13:54:05.232  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:54:05.232  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:54:05.279  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:54:05.449  INFO 8084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 13:54:05.480  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 13:54:05.494  INFO 8084 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.767 seconds (JVM running for 3.324)
+2018-04-04 13:54:05.494  INFO 8084 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 13:54:05.494  INFO 8084 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 13:54:05.494  INFO 8084 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 13:54:05.494  INFO 8084 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 13:54:14.705  INFO 8084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 13:54:14.720  INFO 8084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 13:54:14.743  INFO 8084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-04-04 13:56:16.215  INFO 11040 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 11040 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 13:56:16.215  INFO 11040 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 13:56:16.261  INFO 11040 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a84f40f: startup date [Wed Apr 04 13:56:16 CEST 2018]; root of context hierarchy
+2018-04-04 13:56:17.386  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 13:56:17.429  INFO 11040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 13:56:17.430  INFO 11040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 13:56:17.441  INFO 11040 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 13:56:17.583  INFO 11040 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 13:56:17.583  INFO 11040 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1322 ms
+2018-04-04 13:56:17.717  INFO 11040 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 13:56:17.721  INFO 11040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 13:56:17.722  INFO 11040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 13:56:17.722  INFO 11040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 13:56:17.722  INFO 11040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 13:56:18.028  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a84f40f: startup date [Wed Apr 04 13:56:16 CEST 2018]; root of context hierarchy
+2018-04-04 13:56:18.114  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 13:56:18.117  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 13:56:18.118  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 13:56:18.122  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 13:56:18.123  INFO 11040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 13:56:18.165  INFO 11040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:56:18.165  INFO 11040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:56:18.212  INFO 11040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 13:56:18.366  INFO 11040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 13:56:18.403  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 13:56:18.407  INFO 11040 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.523 seconds (JVM running for 2.939)
+2018-04-04 13:56:18.410  INFO 11040 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 13:56:18.410  INFO 11040 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 13:56:18.410  INFO 11040 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 13:56:18.411  INFO 11040 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 13:57:43.390  INFO 11040 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 13:57:43.390  INFO 11040 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 13:57:43.412  INFO 11040 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018-04-04 13:57:43.459  INFO 11040 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : El documento con el código 1 con nombre Documento1 con fecha de creacion: Wed Apr 04 13:56:17 CEST 2018 que es publico true con el estado: ACTIVO y una fecha de ultima modificación Wed Apr 04 13:56:17 CEST 2018
+2018-04-04 13:57:43.459  INFO 11040 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : El documento con el código 2 con nombre Documento2 con fecha de creacion: Wed Apr 04 13:56:17 CEST 2018 que es publico false con el estado: APROBDO y una fecha de ultima modificación Wed Apr 04 13:56:17 CEST 2018
+2018-04-04 13:57:43.459  INFO 11040 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : El documento con el código 3 con nombre Documento3 con fecha de creacion: Wed Apr 04 13:56:17 CEST 2018 que es publico true con el estado: ELIMINADO y una fecha de ultima modificación Wed Apr 04 13:56:17 CEST 2018
+2018-04-04 14:04:21.838  INFO 8272 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 8272 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 14:04:21.838  INFO 8272 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 14:04:21.892  INFO 8272 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@436a4e4b: startup date [Wed Apr 04 14:04:21 CEST 2018]; root of context hierarchy
+2018-04-04 14:04:23.120  INFO 8272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 14:04:23.162  INFO 8272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 14:04:23.162  INFO 8272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 14:04:23.178  INFO 8272 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 14:04:23.338  INFO 8272 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 14:04:23.338  INFO 8272 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1446 ms
+2018-04-04 14:04:23.462  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 14:04:23.478  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 14:04:23.478  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 14:04:23.478  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 14:04:23.478  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 14:04:23.762  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@436a4e4b: startup date [Wed Apr 04 14:04:21 CEST 2018]; root of context hierarchy
+2018-04-04 14:04:23.862  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 14:04:23.862  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 14:04:23.862  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 14:04:23.878  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 14:04:23.878  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 14:04:23.909  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:04:23.909  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:04:23.994  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:04:24.130  INFO 8272 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 14:04:24.173  INFO 8272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 14:04:24.176  INFO 8272 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.685 seconds (JVM running for 3.079)
+2018-04-04 14:04:24.179  INFO 8272 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 14:04:24.180  INFO 8272 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 14:04:24.180  INFO 8272 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 14:04:24.180  INFO 8272 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 14:04:31.373  INFO 8272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 14:04:31.383  INFO 8272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 14:04:31.385  INFO 8272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-04-04 14:04:40.058  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.066  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 1
+2018-04-04 14:04:40.066  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.066  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento1
+2018-04-04 14:04:40.066  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.066  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:04:40.067  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.067  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: true
+2018-04-04 14:04:40.067  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.067  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: ACTIVO
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 2
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento2
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: false
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.068  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: APROBDO
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 3
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento3
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:04:40.069  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.070  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: true
+2018-04-04 14:04:40.070  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.071  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: ELIMINADO
+2018-04-04 14:04:40.071  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:04:40.071  INFO 8272 --- [http-nio-8080-exec-2] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:04:23 CEST 2018
+2018-04-04 14:14:33.270  INFO 6636 --- [main] e.f.eadmin.eadmin.EadminApplication      : Starting EadminApplication on mvformacion with PID 6636 (C:\Users\formacion\Downloads\eadmin\target\classes started by formacion in C:\Users\formacion\Downloads\eadmin)
+2018-04-04 14:14:33.270  INFO 6636 --- [main] e.f.eadmin.eadmin.EadminApplication      : No active profile set, falling back to default profiles: default
+2018-04-04 14:14:33.354  INFO 6636 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6107227e: startup date [Wed Apr 04 14:14:33 CEST 2018]; root of context hierarchy
+2018-04-04 14:14:34.562  INFO 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-04 14:14:34.602  INFO 6636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-04 14:14:34.602  INFO 6636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-04 14:14:34.610  INFO 6636 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\formacion\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\eclipse\jee-oxygen\eclipse;;.]
+2018-04-04 14:14:34.710  INFO 6636 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-04 14:14:34.710  INFO 6636 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1356 ms
+2018-04-04 14:14:34.858  INFO 6636 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-04 14:14:34.858  INFO 6636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 14:14:34.858  INFO 6636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 14:14:34.858  INFO 6636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 14:14:34.858  INFO 6636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 14:14:35.189  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6107227e: startup date [Wed Apr 04 14:14:33 CEST 2018]; root of context hierarchy
+2018-04-04 14:14:35.288  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<es.fpdual.eadmin.eadmin.modelo.Documento>> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getTodosDocumentos()
+2018-04-04 14:14:35.290  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/{codigo}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<es.fpdual.eadmin.eadmin.modelo.Documento> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.getDocumentoPorCodigo(java.lang.Integer)
+2018-04-04 14:14:35.291  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eadmin/documentos/eliminar/{codigo}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> es.fpdual.eadmin.eadmin.controlador.ControladorEadmin.eliminarDocumeto(java.lang.Integer)
+2018-04-04 14:14:35.296  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 14:14:35.297  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 14:14:35.339  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:14:35.339  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:14:35.390  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 14:14:35.552  INFO 6636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-04 14:14:35.589  INFO 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-04 14:14:35.592  INFO 6636 --- [main] e.f.eadmin.eadmin.EadminApplication      : Started EadminApplication in 2.67 seconds (JVM running for 3.074)
+2018-04-04 14:14:35.596  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en altaDocumento
+2018-04-04 14:14:35.596  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 1 creado correctamente.
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de altaDocumento
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en altaDocumento
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 2 creado correctamente.
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de altaDocumento
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en altaDocumento
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento con código 3 creado correctamente.
+2018-04-04 14:14:35.597  INFO 6636 --- [main] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de altaDocumento
+2018-04-04 14:14:35.598  INFO 6636 --- [main] e.f.eadmin.eadmin.EadminApplication      : Fin run
+2018-04-04 14:14:55.315  INFO 6636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 14:14:55.319  INFO 6636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 14:14:55.337  INFO 6636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en obtenerTodosLosDocumento
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 1
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento1
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: true
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: ACTIVO
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 2
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento2
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: false
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: APROBDO
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 3
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento3
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: true
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: ELIMINADO
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:14:55.367  INFO 6636 --- [http-nio-8080-exec-1] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de obtenerTodosLosDocumentos
+2018-04-04 14:15:19.632  WARN 6636 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2018-04-04 14:15:36.489  INFO 6636 --- [http-nio-8080-exec-3] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en eliminarDocumento
+2018-04-04 14:15:36.490  INFO 6636 --- [http-nio-8080-exec-3] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliedo de eliminarDocumento
+2018-04-04 14:15:47.671  WARN 6636 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : Request method 'DELETE' not supported
+2018-04-04 14:15:51.800  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Entrando en obtenerTodosLosDocumento
+2018-04-04 14:15:51.800  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 2
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento2
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: false
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: APROBDO
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Documento: 3
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Nombre: Documento3
+2018-04-04 14:15:51.801  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha Creacion Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Publico: true
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Estado: ELIMINADO
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : ************
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Fecha UltimaModificación: Wed Apr 04 14:14:34 CEST 2018
+2018-04-04 14:15:51.802  INFO 6636 --- [http-nio-8080-exec-5] e.f.e.e.r.impl.RepositorioDocumentoImpl  : Saliendo de obtenerTodosLosDocumentos

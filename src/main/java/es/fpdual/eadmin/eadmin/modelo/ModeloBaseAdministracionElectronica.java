@@ -37,7 +37,7 @@ public abstract class ModeloBaseAdministracionElectronica {
 	
 	@Override
 	public String toString() {
-		return "Documento con código" + codigo;
+		return "Documento con código " + codigo ;
 	}
 	
 	

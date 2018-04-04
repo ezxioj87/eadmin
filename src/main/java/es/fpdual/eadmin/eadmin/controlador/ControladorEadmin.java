@@ -32,7 +32,8 @@ public class ControladorEadmin {
 	
 	@GetMapping(value="/eadmin/documentos/{codigo}")
 	public ResponseEntity<Documento> getDocumentoPorCodigo(@PathVariable("codigo") Integer codigo){
-		if(Objects.nonNull(codigo)) {
+		final Documento documento = this.servicioDocumento.obtenerDocumentoPorCodigo(codigo);
+		if(Objects.nonNull(documento)) {
 		return new ResponseEntity<Documento>(
 				servicioDocumento.obtenerDocumentoPorCodigo(codigo), HttpStatus.OK);
 		}
